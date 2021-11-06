@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+   
+}
+body{
+    font-size: 90%;
+    color: white;
+    background-color: #000B26;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+ p{
+       opacity: 80%;
+   }
+
+  nav{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-around;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+      right: 0px;
+      align-content: center;
+      text-align: center;
+      
+      top:0px;
+      background-color: #000B26;
+      
+      
+
+}
+nav h3.about:hover,
+nav h3.home:hover,
+nav h3.download:hover,
+nav h3.news:hover{
+    color: #1D86B4;
+}
+span.diff{
+background: linear-gradient( #1D86B4, #00FFB2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+
+ 
+}
+hero{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    height: 90vh;
+    transform: translateY(-100px);
+    animation: fadeIn 3s;
+}
+
+p.hero{
+    
+    font-size: 1rem;
+}
+hero h3{
+    font-size: 3rem;
+}
+::-webkit-scrollbar{
+    width: 0px;
+    
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient( #1D86B4, #00FFB2);
+    border-radius: 100px;
+   
+    
+}
+tryBtn {
+    background-color: #1D86B4;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+   width: 30%;
+   height: 60px;
+   transform: translateX(115%) translateY(10px);
+  
+    
+ 
+  } 
+  tryBtn h3{
+      font-size: 1rem;
+      
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+@keyframes Light{
+    from{
+        background:linear-gradient( #1D86B4, #00FFB2);
+    }
+    to{
+        background:linear-gradient(#00FFB2, #1d86b4);
+    }
+}
+@keyframes Float{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-15px);
+    }
+}
+h3.icon{
+    font-size: 3rem;
+    width: 100%;
+}
+h3.icon p{
+    font-size: 1.3rem;
+    width: 60%;
+    height: 100%;
+}
+div.icons{
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    
+    
+}
+@media all and (max-width:1025px) {
+   div.icons svg,
+   div.wallpaper svg{
+        opacity: 0%;
+        width: 0%;
+        height: 0%;
+    }
+
+prices{
+    flex-direction: column;
+}
+@media screen and (max-width:768px) {
+  div.prices{
+      flex-direction: column;
+  }
+}
+ 
+}
+div.icons svg{
+    transform: translateX(-100px);
+}
+div.wallpaper{
+    display:flex;
+    flex-direction:row;
+    height:80vh;
+    
+}
+div.wallpaper h3{
+    font-size: 3rem;
+    align-items: center;
+    transform: translateY(150px);
+  
+    
+}
+div.wallpaper h3 p{
+    font-size: 1.3rem;
+    width: 60%;
+}
+mockup1{
+    transform: scale(0.9);
+}
+title3{
+    text-align: center;
+}
+title3 h3{
+    font-size: 2rem;
+  
+}
+/*title3 h3:before{
+    content: '';
+    background: linear-gradient(#1D86B4, #00FFB2);
+    display: inline-block;
+    width: 7%;
+    height: 10px;
+    border-radius: 50px;
+    transform: translateY(20px) translateX(140px);
+    animation: none;
+    
+}
+*/
+price1 svg,
+price2 svg,
+price3 svg{
+    transform: scale(0.7);
+}
+div.prices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+
+}
+div.footer{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    background-color:#1d86b4;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 2rem;
+}
